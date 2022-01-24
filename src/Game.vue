@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { onUnmounted } from 'vue'
-import { getWordOfTheDay, allWords } from './words'
+import { getDayNumber, getWordOfTheDay, allWords } from './words'
 import Keyboard from './Keyboard.vue'
 import { LetterState } from './types'
 
+// Get day number
+const dayNumber = getDayNumber()
 // Get word of the day
-const answer = getWordOfTheDay()
+const answer = getWordOfTheDay(dayNumber)
 
 // Board state. Each tile is represented as { letter, state }
 const board = $ref(
@@ -174,6 +176,7 @@ function genResultGrid() {
     <div class="message" v-if="message">
       {{ message }}
       <pre v-if="grid">{{ grid }}</pre>
+      Lordle of the Rings #{{ dayNumber }}
     </div>
   </Transition>
   <header>
@@ -202,15 +205,19 @@ function genResultGrid() {
   </div>
   <Keyboard @key="onKey" :letter-states="letterStates" />
   <div>
-    use only five-letter words (including names)
-    <br/>in the main text of Lord of the Rings
-    <br/><a
+    Use only five-letter words (including names)
+    <br/>in the main text of Lord of the Rings.
+    <br/>Built on <a
       href="https://github.com/yyx990803/vue-wordle"
       target="_blank"
-      >based on vue-wordle</a
+      >vue-wordle</a
     >
+    and based on <a
+      href="https://www.powerlanguage.co.uk/wordle/"
+      target="_blank"
+      >WORDLE</a
+    >.
   </div>
-
 </template>
 
 <style scoped>
