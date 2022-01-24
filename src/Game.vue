@@ -177,13 +177,7 @@ function genResultGrid() {
     </div>
   </Transition>
   <header>
-    <h1>VVORDLE</h1>
-    <a
-      id="source-link"
-      href="https://github.com/yyx990803/vue-wordle"
-      target="_blank"
-      >Source</a
-    >
+    <h1>LORDLE OF THE RINGS</h1>
   </header>
   <div id="board">
     <div
@@ -207,6 +201,16 @@ function genResultGrid() {
     </div>
   </div>
   <Keyboard @key="onKey" :letter-states="letterStates" />
+  <div>
+    use only five-letter words (including names)
+    <br/>in the main text of Lord of the Rings
+    <br/><a
+      href="https://github.com/yyx990803/vue-wordle"
+      target="_blank"
+      >based on vue-wordle</a
+    >
+  </div>
+
 </template>
 
 <style scoped>
