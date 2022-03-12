@@ -180,7 +180,7 @@ function genResultGrid() {
     </div>
   </Transition>
   <header>
-    <h1>LORDLE OF THE RINGS</h1>
+    <h1>FICTORDLE</h1>
   </header>
   <div id="board">
     <div
@@ -205,18 +205,11 @@ function genResultGrid() {
   </div>
   <Keyboard @key="onKey" :letter-states="letterStates" />
   <div>
-    Use only five-letter words (including names)
-    <br/>in the main text of Lord of the Rings.
-    <br/>Built on <a
-      href="https://github.com/yyx990803/vue-wordle"
-      target="_blank"
-      >vue-wordle</a
-    >
-    and based on <a
-      href="https://www.powerlanguage.co.uk/wordle/"
-      target="_blank"
-      >WORDLE</a
-    >.
+    <br/>
+    <br/>
+    Welcome to Fictordle: a Wordle clone that uses famous fictional characters!
+    <br/>Note: although you can use normal words as guesses, the answer will always be a fictional character.
+    <br/>Only Star Wars characters have been added as of now, but more are coming soon!
   </div>
 </template>
 
