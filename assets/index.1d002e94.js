@@ -183,7 +183,6 @@ const D = e => (S("data-v-ebd260e6"), e = e(), A(), e),
                         R(), v("Not in word list");
                         return
                     }
-                    let m = 'vader';
                     console.log(Y());
                     console.log(_.length);
                     const u = m.split("");
