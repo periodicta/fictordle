@@ -184,7 +184,8 @@ const D = e => (S("data-v-ebd260e6"), e = e(), A(), e),
                         return
                     }
                     let m = 'vader';
-                    console.log(_[p]);
+                    console.log(Y());
+                    console.log(_.length);
                     const u = m.split("");
                     a.value.forEach((r, z) => {
                         u[z] === r.letter && (r.state = y.value[r.letter] = d.CORRECT, u[z] = null)
