@@ -53,7 +53,7 @@ function Y() {
         p = new Date(2022, 0, 0),
         m = Number(e) - Number(p);
     let l = Math.floor(m / (1e3 * 60 * 60 * 24));
-    for (; l > _.length;) l -= _.length;
+    for (; l > _.length-1;) l -= _.length;
     return l
 }
 
