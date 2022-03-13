@@ -207,9 +207,13 @@ function genResultGrid() {
   <div>
     <br/>
     <br/>
-    Welcome to Fictordle: a Wordle clone that uses famous fictional characters!
-    <br/>Note: although you can use normal words as guesses, the answer will always be a fictional character.
-    <br/>Only Star Wars characters have been added as of now, but more are coming soon!
+    Welcome to <b>Fictordle</b>: the Wordle clone
+    <br/>that uses famous fictional characters!<br/>
+    <br/><b>Note</b>: although you can use normal words as guesses, the answer will always be a fictional character.<br/>
+    <br/>As of March 12, 2021, characters have been added from:
+    <ul>
+      <li>Star Wars (5)</li>
+    </ul>
   </div>
 </template>
 
