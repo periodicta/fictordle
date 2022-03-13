@@ -176,7 +176,7 @@ function genResultGrid() {
     <div class="message" v-if="message">
       {{ message }}
       <pre v-if="grid">{{ grid }}</pre>
-      Lordle of the Rings #{{ dayNumber }}
+      Fictordle #{{ dayNumber }}
     </div>
   </Transition>
   <header>
