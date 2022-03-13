@@ -23,7 +23,6 @@ header {
   top: 0.5em;
 }
 
-#white
 .correct,
 .present,
 .absent {
@@ -40,18 +39,4 @@ header {
 
 .absent {
   background-color: #787c7e !important;
-}
-
-ul {
-    text-align: center;
-    list-style-position: inside;
-    color: #fff;
-}
-
-li {
-  color: #fff;
-}
-
-html {
-  background-color: #191E1E;
 }
