@@ -161,7 +161,8 @@ const D = e => (S("data-v-ebd260e6"), e = e(), A(), e),
             }
 
             function F(o) {
-                for (const u of a)
+                for (const u of a.value)
+                  console.log(a)
                     if (!u.letter) {
                         u.letter = o;
                         break
@@ -169,7 +170,7 @@ const D = e => (S("data-v-ebd260e6"), e = e(), A(), e),
             }
 
             function G() {
-                for (const o of [...a].reverse())
+                for (const o of [...a.value].reverse())
                     if (o.letter) {
                         o.letter = "";
                         break
@@ -177,20 +178,20 @@ const D = e => (S("data-v-ebd260e6"), e = e(), A(), e),
             }
 
             function K() {
-                if (a.every(o => o.letter)) {
-                    const o = a.map(r => r.letter).join("");
+                if (a.value.every(o => o.letter)) {
+                    const o = a.value.map(r => r.letter).join("");
                     if (!as.includes(o) && o !== m) {
                         R(), v("Not in word list");
                         return
                     }
                     const u = m.split("");
-                    a.forEach((r, z) => {
+                    a.value.forEach((r, z) => {
                         u[z] === r.letter && (r.state = y.value[r.letter] = d.CORRECT, u[z] = null)
-                    }), a.forEach(r => {
+                    }), a.value.forEach(r => {
                         !r.state && u.includes(r.letter) && (r.state = d.PRESENT, u[u.indexOf(r.letter)] = null, y.value[r.letter] || (y.value[r.letter] = d.PRESENT))
-                    }), a.forEach(r => {
+                    }), a.value.forEach(r => {
                         r.state || (r.state = d.ABSENT, y.value[r.letter] || (y.value[r.letter] = d.ABSENT))
-                    }), T = !1, a.every(r => r.state === d.CORRECT) ? setTimeout(() => {
+                    }), T = !1, a.value.every(r => r.state === d.CORRECT) ? setTimeout(() => {
                         w.value = V(), v(["Genius", "Magnificent", "Impressive", "Splendid", "Great", "Phew"][s.value], -1)
                     }, 1600) : s.value < l.value.length - 1 ? (s.value++, setTimeout(() => {
                         T = !0
