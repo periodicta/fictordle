@@ -183,7 +183,7 @@ const D = e => (S("data-v-ebd260e6"), e = e(), A(), e),
                         R(), v("Not in word list");
                         return
                     }
-                    console.log(m);
+                    let m = 'vader';
                     const u = m.split("");
                     a.value.forEach((r, z) => {
                         u[z] === r.letter && (r.state = y.value[r.letter] = d.CORRECT, u[z] = null)
