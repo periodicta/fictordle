@@ -52,7 +52,7 @@ function Y() {
     const e = new Date,
         p = new Date(2022, 0, 0),
         m = Number(e) - Number(p);
-    let l = 0;
+    let l = 3;
     for (; l > _.length;) l -= _.length;
     return l
 }
