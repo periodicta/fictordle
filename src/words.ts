@@ -16,7 +16,11 @@ export function getWordOfTheDay(day: number) {
 
 // copied from Wordle source
 const answers = [
-  'vader'
+  'vader',
+  'wedge',
+  'lando',
+  'needa',
+  'sheev'
 ]
 
 const answers = [
