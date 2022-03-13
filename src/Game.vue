@@ -204,7 +204,7 @@ function genResultGrid() {
     </div>
   </div>
   <Keyboard @key="onKey" :letter-states="letterStates" />
-  <div>
+  <div class="white">
     <br/>
     <br/>
     Welcome to <b>Fictordle</b>: the Wordle clone
