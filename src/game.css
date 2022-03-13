@@ -3,7 +3,6 @@ body {
   text-align: center;
   max-width: 500px;
   margin: 0px auto;
-  color: #000;
 }
 
 h1 {
@@ -39,4 +38,13 @@ header {
 
 .absent {
   background-color: #787c7e !important;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+html {
+  background-color: #191E1E;
 }
