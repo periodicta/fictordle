@@ -161,7 +161,6 @@ const D = e => (S("data-v-ebd260e6"), e = e(), A(), e),
             }
 
             function F(o) {
-                console.log(a.value)
                 for (const u of a.value)
                     if (!u.letter) {
                         u.letter = o;
